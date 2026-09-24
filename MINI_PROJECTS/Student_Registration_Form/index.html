@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration | Tejasva</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">WEB DEVELOPMENT MINI PROJECT</p>
+      <h1>Student Registration Portal</h1>
+      <p class="subtitle">Register your details and build a simple student directory.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card form-card">
+      <div class="section-heading">
+        <div>
+          <h2>Register Student</h2>
+          <p>Enter the details below to add a student.</p>
+        </div>
+        <span class="step">01</span>
+      </div>
+
+      <form id="studentForm">
+        <div class="form-grid">
+          <div class="field full">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter full name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="student@example.com" required>
+          </div>
+
+          <div class="field">
+            <label for="website">Website</label>
+            <input id="website" name="website" type="url" placeholder="https://example.com">
+          </div>
+
+          <div class="field">
+            <label>Gender</label>
+            <div class="radio-row">
+              <label class="choice"><input type="radio" name="gender" value="Male" required> Male</label>
+              <label class="choice"><input type="radio" name="gender" value="Female"> Female</label>
+              <label class="choice"><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="photo">Student Photo</label>
+            <input id="photo" name="photo" type="file" accept="image/*">
+            <small class="file-note">Required. Choose a photo from your device.</small>
+            <div id="photoPreview" class="photo-preview" hidden>
+              <img id="previewImage" src="" alt="Student photo preview">
+            </div>
+          </div>
+
+          <div class="field full">
+            <label for="skillInput">Skills</label>
+            <div class="skill-input-row">
+              <input id="skillInput" type="text" placeholder="Type a skill, e.g. React" maxlength="40" autocomplete="off">
+              <button id="addSkillBtn" class="btn secondary" type="button">Add Skill</button>
+            </div>
+            <small class="file-note">Optional. Press Enter or click Add Skill. Click × on a skill to remove it.</small>
+            <div id="skillList" class="skills"></div>
+          </div>
+        </div>
+
+        <div id="message" class="message" aria-live="polite"></div>
+
+        <div class="actions">
+          <button class="btn primary" type="submit">Add Student</button>
+          <button class="btn secondary" type="reset">Clear Form</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card directory">
+      <div class="section-heading">
+        <div>
+          <h2>Enrolled Students</h2>
+          <p id="studentCount">0 students registered</p>
+        </div>
+        <span class="step">02</span>
+      </div>
+
+      <div id="emptyState" class="empty">
+        <div class="empty-icon">+</div>
+        <h3>No students yet</h3>
+        <p>Submit the form above to create the first entry.</p>
+      </div>
+
+      <div id="studentList" class="student-list"></div>
+    </section>
+  </main>
+
+  <footer>Student Registration Portal • Built with HTML, CSS & JavaScript</footer>
+  <script src="script.js"></script>
+</body>
+</html>
