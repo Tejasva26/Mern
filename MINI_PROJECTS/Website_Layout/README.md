@@ -13,6 +13,7 @@ A simple student registration form created using HTML, CSS, and JavaScript.
 - Basic styling and layout
 
 🔗 [View Project](./MINI_PROJECTS/Student_Registration_Form/)
+
 Project Link - https://tejasva26.github.io/Mern/MINI_PROJECTS/Student_Registration_Form/
 ---
 
