@@ -30,6 +30,9 @@ Open `index.html` in a browser.
 
 For the best development experience, open the folder in VS Code and use the Live Server extension.
 
+Or Run the Student Registration Portal through this link - https://tejasva26.github.io/Mern/
+
+
 ## Author
 
 Tejasva Jain
